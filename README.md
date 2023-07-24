@@ -8,4 +8,4 @@ Wanna check it out? 👇🏻
 
 ### https://growdev-codai-nikel.netlify.app/
 
-[nikel-live-example.webm](https://github.com/YuriAz/growdev-codai-nikel/assets/86689137/6c67b236-0e20-48c7-aa75-24d473ce60a1)
+[Nikel](https://github.com/YuriAz/growdev-codai-nikel/assets/86689137/6c67b236-0e20-48c7-aa75-24d473ce60a1)

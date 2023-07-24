@@ -156,6 +156,16 @@ function getTotal() {
     }
   })
 
+  if (total == 0) {
+    document.getElementById('total').classList.remove('green-text', 'red-text')
+  } else if (total > 0) {
+    document.getElementById('total').classList.remove('red-text')
+    document.getElementById('total').classList.add('green-text')
+  } else if (total < 0) {
+    document.getElementById('total').classList.remove('green-text')
+    document.getElementById('total').classList.add('red-text')
+  }
+
   document.getElementById('total').innerHTML = `R$ ${total.toFixed(2)}`
 }
 

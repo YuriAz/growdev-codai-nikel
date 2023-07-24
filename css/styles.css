@@ -157,3 +157,11 @@ header {
   color: #4e0070;
   transition: all 150ms;
 }
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}

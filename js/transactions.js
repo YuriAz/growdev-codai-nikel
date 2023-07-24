@@ -3,6 +3,7 @@ const deleteModal = new bootstrap.Modal('#delete-transaction-modal')
 const editModal = new bootstrap.Modal('#edit-transaction-modal')
 const session = localStorage.getItem('session')
 let logged = sessionStorage.getItem('logged')
+let isAscending = true
 let data = {
   transactions: []
 }
@@ -10,6 +11,7 @@ let data = {
 document.getElementById('button-logout').addEventListener('click', logout)
 document.getElementById('button-delete').addEventListener('click', deleteTransaction)
 document.getElementById('button-save').addEventListener('click', saveEditedTransaction)
+document.getElementById('sort-button').addEventListener('click', sortTransactionsByDate);
 
 // ADD TRANSACTION
 document.getElementById('transaction-form').addEventListener('submit', function (e) {
@@ -175,4 +177,17 @@ function saveEditedTransaction() {
 
     alert('Transação editada com sucesso.')
   }
+}
+
+function sortTransactionsByDate() {
+  if (isAscending) {
+    data.transactions.sort((a, b) => new Date(a.date) - new Date(b.date))
+  } else {
+    data.transactions.sort((a, b) => new Date(b.date) - new Date(a.date))
+  }
+
+  isAscending = !isAscending
+  saveData(data)
+
+  getTransactions()
 }

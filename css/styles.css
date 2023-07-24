@@ -145,3 +145,15 @@ header {
   color: #4e0070;
   transition: all 150ms;
 }
+
+.sort {
+  border: none;
+  background-color: #ffffff;
+  color: #4c79d3;
+  border-radius: 10px;
+}
+
+.sort:hover {
+  color: #4e0070;
+  transition: all 150ms;
+}

@@ -115,6 +115,10 @@ header {
   white-space: nowrap;
 }
 
+.info::-webkit-scrollbar {
+  display: none;
+}
+
 .menu {
   margin-right: 20px;
 }
@@ -126,7 +130,7 @@ header {
 .trash {
   border: none;
   color: #4c79d3;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .trash:hover {
@@ -137,7 +141,7 @@ header {
 .edit {
   border: none;
   color: #4c79d3;
-  background-color: #ffffff;
+  background-color: transparent;
   margin-right: 30px;
 }
 
